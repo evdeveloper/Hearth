@@ -1,0 +1,22 @@
+.button {
+    width: 100%;
+    border-radius: 50px;
+    background-color: #e70067;
+    font-family: $Geometria;
+    color: #f0f5ff;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    transition: all .3s linear;
+    text-align: center;
+    line-height: 60px;
+    &:hover {
+        background-color: #f6388d;
+    }
+    &:active {
+        background-color: #b02563;
+    }
+    &_small {max-width: 160px;}
+    &_big {max-width: 200px;}
+    &_middle {max-width: 180px;}
+}

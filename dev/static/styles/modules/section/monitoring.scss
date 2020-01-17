@@ -1,0 +1,93 @@
+.s-monitoring {
+    padding: 170px 0 200px 0;
+    @media screen and (max-width: 1370px) {
+        padding: 100px 0;
+    }
+
+}
+
+.monitoring {
+    &__img {
+        max-width: 550px;
+        @media screen and (max-width: 1370px){
+            max-width: 350px;
+        }
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (max-width: 1370px) {
+            flex-wrap: wrap;
+        }
+    }
+    &__col {
+        @media screen and (max-width: 1370px) {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    &__title {
+        text-align: center;
+        color: #31496b;
+        margin-bottom: 100px;
+        @media screen and (max-width: 1370px) {
+            margin-bottom: 70px;
+        }
+    }
+    &__count {
+        position: absolute;
+        z-index: -1;
+        left: -100px;
+        top: -8px;
+        width: 120px;
+        height: 120px;
+        border: 1px solid #86ddfa;
+        color: #86ddfa;
+        text-align: center;
+        line-height: 120px;
+        font-size: 60px;
+        border-radius: 50%;
+        @media screen and (max-width: 1370px){
+            left: 2px;
+            z-index: 1;
+            top: 17px;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 30px;
+        }
+    }
+    
+    &__item {
+        flex: 0 0 550px;
+        max-width: 550px;
+        padding: 30px 0 0 20px;
+        text-align: left;
+        position: relative;
+        background-color: #fafaff;
+        &:not(:last-child) {
+            margin-bottom: 90px;
+            @media screen and (max-width: 1370px){
+                margin-bottom: 50px;
+            }
+        }
+        &:last-child {
+            @media screen and (max-width: 1370px){
+                margin-bottom: 50px;
+            }
+        }
+        &-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        &-text {
+            line-height: 1.5;
+        }
+        @media screen and (max-width: 1370px) {
+            padding: 30px 0 0 80px;
+        }
+    }
+}

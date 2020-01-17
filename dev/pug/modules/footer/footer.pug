@@ -1,0 +1,40 @@
+footer.footer
+    .container
+        .footer__inner
+            .footer__logo 
+                img(src="static/images/img/f-logo.png" alt="Логотип")
+            nav.menu.footer_menu   
+                .menu__item
+                    a(href="#").menu__link О сервисе
+                .menu__item
+                    a(href="#").menu__link Функции
+                .menu__item
+                    a(href="#").menu__link Возможности
+                .menu__item
+                    a(href="#").menu__link Специалистам
+                .menu__item
+                    a(href="tel:88005004549").menu__link 88005004549
+        .developer Разработка сайта
+            a(href="#").developer__company Redsoft
+
+.modal
+    .modal__inner
+        .modal__title Форма заявку
+        form(class="modal__form" role="form")
+            .modal__form-item
+                input(type="text" name="name" id="name" required class="modal__input required textname")
+                label(for="name" class="modal__label")
+                    span.modal__label-text Имя
+            .modal__form-item
+                input(type="tel" name="name" id="phone" required class="modal__input required phones")
+                label(for="phone" class="modal__label")
+                    span.modal__label-text Телефон
+            textarea(name="msg" rows="7" class="modal__msg" placeholder="Сообщение")
+            button(type="submit" data-modal="btn" class="button btnSubmit") Отправить
+.modal__close
+    +icon('close','modal__close-icon')
+
+
+
+
+

@@ -1,0 +1,56 @@
+.s-access {
+    padding: 150px 0;
+    background-color: #e2e9f7;
+}
+
+.access {
+    text-align: center;
+    &__title {
+        margin-bottom: 60px;
+    }
+    &__sub-title {
+        margin-bottom: 60px;
+        span { display: block; }
+    }
+}
+
+.form {
+    &__email {
+        width: 100%;
+        max-width: 360px;
+        border-style: none;
+        height: 60px;
+        padding: 0 20px;
+        margin-right: 40px;
+        outline: none;
+        border-radius: 50px;
+        font-size: 18px;
+        background-color: #e2e9f7;
+        font-family: $Regular;
+        border: 1px solid #4f699b;
+        &.modal_error {
+            border-color: red;
+        }
+        &.modal_ok {
+            border-color: green;
+        }
+        &::placeholder {
+            color: #a8b2bf;
+            font-size: 14px;
+            font-family: $Regular;
+            opacity: 1; 
+            transition: opacity 0.3s ease;
+        }
+        &:focus {
+            &::placeholder {
+                opacity: 0; 
+                transition: opacity 0.3s ease;
+            }
+        }
+    }
+}
+
+.swal-title, 
+.swal-text {
+    color: #60759d;
+}

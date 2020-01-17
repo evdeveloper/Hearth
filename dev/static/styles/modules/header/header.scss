@@ -1,0 +1,98 @@
+.header {
+    &-body {
+        max-width: 750px;
+        margin: auto;
+    }
+    &-btn {
+        width: 100%;
+        max-width: 196px;
+        height: 56px;
+        border: 2px solid #5489c3;
+        border-radius: 50px;
+        text-align: center;
+        line-height: 52px;
+        font-family: $Bold;
+        cursor: pointer;
+        margin-left: auto;
+        color: #fdfffc;
+        transition: all .3s linear;
+        &:hover {
+            border-color: #fff;
+        }
+        &:active {
+            border-color: #a7a7a7;
+        }
+    }
+    &-top {
+        width: 100%;
+        height: 740px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        &__logo {
+            margin-right: 190px;
+        }
+        &__inner {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+            margin-bottom: 100px;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    &__link {
+        display: block;
+        padding: 10px;
+        color: #fdfffc;
+        &:not(:last-child) {margin-right: 30px;}
+
+    }
+
+}
+
+.swiper {
+    &_button {
+        margin: auto;
+    }
+    &__slide {
+        text-align: center;
+        color: #fff;
+        height: 500px;
+        line-height: 1.5;
+        &-title {
+            margin-bottom: 60px;
+        }
+        &-sub-title {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+.swiper-pagination {
+    left: 50%!important;
+    transform: translate3d(-50%,0,0);
+    max-width: 73px;
+    height: 16px;
+    line-height: 6px;
+    border: 1px solid #5489c3;
+    border-radius: 50px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #fafbfd;
+    height: 1px;
+    width: 16px;
+}
+
+
+

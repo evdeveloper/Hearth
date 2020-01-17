@@ -1,0 +1,18 @@
+extends template/main
+
+block variables
+	- var title = 'Главная страница'
+	- var pageClass = 'index-page'
+
+
+
+block content
+	include section/journal
+	include section/function
+	include section/monitoring
+	include section/expert
+	include section/access
+
+
+
+

@@ -1,0 +1,26 @@
+@mixin size($a,$b: $a) {
+  width: $a;
+  height: $b;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+
+@mixin links ($link, $visited, $hover, $active) {
+    & {
+        color: $link;
+        &:visited {
+            color: $visited;
+        }
+        &:hover {
+            color: $hover;
+        }
+        &:active, &:focus {
+            color: $active;
+        }
+    }
+}

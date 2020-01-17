@@ -1,0 +1,75 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+
+html {
+  font-size: $base-font-size;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: $base-fonts;
+  background-color:#fafaff;
+}
+
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+h1, h2 {
+  font-size: 36px;
+}
+h3 {font-size: 24px;}
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a { text-decoration: none; }
+
+p { margin: 0; }
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea { vertical-align: middle; }
+
+textarea { resize: none; }
+
+section { 
+  position: relative;
+  color: #60759d;
+ }
+
+input,
+select,
+button { outline: none; }
+
+*, *:before, *:after { box-sizing: border-box; }
+
+
+.content { 
+  flex: 1 0 auto;
+  overflow: hidden;
+ }
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 100%;
+  max-width: 1170px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.container_small {
+  max-width: 980px;
+}
+
+//Модули
+@import "modules/modules";
