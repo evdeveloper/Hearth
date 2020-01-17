@@ -150,29 +150,14 @@
 		}
     }
     window.validation.init({
-        container: '.form',
+        container: '.form,.modal__form',
         submitHandler: function () {
             swal({
                 title: "Спасибо за заявку",
                 text: "Менеджер свяжется с вами в течении 15 минут",
                 icon: "success",
                 buttons: false,
-                timer: 2000,
-                className: 'modal__success'
-              });
-              
-        }
-    });
-    window.validation.init({
-        container: 'form',
-        submitHandler: function () {
-            swal({
-                title: "Спасибо за заявку",
-                text: "Менеджер свяжется с вами в течении 15 минут",
-                icon: "success",
-                buttons: false,
-                timer: 2000,
-                className: 'modal__success'
+                timer: 2000
               });
               
         }
